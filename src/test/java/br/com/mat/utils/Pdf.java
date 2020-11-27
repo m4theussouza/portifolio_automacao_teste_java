@@ -46,22 +46,20 @@ public class Pdf extends Setup {
 	    		image  = Image.getInstance(f.getPath());
 	    		doc.newPage();
 	    		
+	    		
 	    		paragraph = new Paragraph(fileName.replace(".png", " "));
+	    		fileName = fileName + " - Status do Cenário: " + status.name();
 	    		paragraph.setAlignment( Paragraph.ALIGN_CENTER );
 	    		paragraph.setSpacingAfter(20);
 	    		doc.add( paragraph );
 	    		
-	    		logoImg.setAlignment(Image.ALIGN_LEFT);
-	    		logoImg.scaleAbsolute(50,50);
+	    		logoImg.scaleAbsolute(75,75);
+	    		logoImg.setAbsolutePosition(25, pagey - 100);
 	    		doc.add(logoImg);
 	    		
 	    		image.scaleAbsolute(imagex, imagey);
 	    		image.setAbsolutePosition( (pagex - imagex) / 2 , (pagey - imagey) / 2);
 	    		doc.add(image);
-	    		
-	    		fileName = fileName + " - " + status.name();
-	    		
-	    		
 	    		
 	    		if( status.name().equals("FAILED") ) {
 	    			rectInferior = new Rectangle(pagex, 20); 
