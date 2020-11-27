@@ -46,11 +46,9 @@ public class PageBase extends Setup {
 	
 	public boolean elementoExiste(TipoSeletor tipo, String seletor, int segundosEspera) throws InterruptedException {
 		
-		System.out.println("DEMORA DO CARALHO");
 		List<WebElement> elementos = null;
 		
 		for (int i = 0; i < segundosEspera; i++) {
-			System.out.println("DEMORA DO CARALHO 2222");
 			switch(tipo) {
 				case XPATH:
 					elementos = getDriver().findElements( By.xpath(seletor) );
