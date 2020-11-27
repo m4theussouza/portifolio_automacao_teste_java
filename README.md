@@ -1,4 +1,4 @@
-Projeto Teste RSI
+Projeto Teste
 ===
 
 Instruções
