@@ -1,10 +1,8 @@
-package br.com.rsi.steps;
-
-import static org.junit.Assert.assertFalse;
+package br.com.mat.steps;
 
 import java.io.IOException;
 
-import br.com.rsi.pages.LoginPage;
+import br.com.mat.pages.LoginPage;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.Então;
 import io.cucumber.java.pt.Quando;

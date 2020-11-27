@@ -1,4 +1,4 @@
-package br.com.rsi.utils;
+package br.com.mat.utils;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,8 +14,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import br.com.rsi.pages.Constantes;
 
 
 public class PageBase extends Setup {
@@ -79,7 +77,7 @@ public class PageBase extends Setup {
 				return true;
 			} else {
 				System.out.println("Esperando Elemento com seletor: ["+ seletor +"] por "+ i +" segundos."  );
-				driver.manage().timeouts().implicitlyWait(Constantes.TIME_WAIT_ELEMENT_EXIST, TimeUnit.SECONDS);
+				driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			}
 			
 		}

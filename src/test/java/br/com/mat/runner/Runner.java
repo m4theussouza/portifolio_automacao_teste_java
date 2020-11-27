@@ -1,4 +1,4 @@
-package br.com.rsi.runner;
+package br.com.mat.runner;
 
 import org.junit.runner.RunWith;
 import io.cucumber.junit.Cucumber;
@@ -10,10 +10,9 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
  *
  */
 @RunWith(Cucumber.class)
-@CucumberOptions(glue = {"br.com.rsi.steps","br.com.rsi.test", "br.com.rsi.utils"}, //
+@CucumberOptions(glue = {"br.com.rsi.test", "br.com.rsi.steps"}, //
 		features = "classpath:features", //
-		plugin = { "pretty", "html:target/site/cucumber-pretty", "json:target/cucumber.json" },
-		tags = "@Login", //
+		plugin = { "pretty", "html:target/site/cucumber-pretty", "json:target/cucumber.json", "junit:target/cucumber.xml"},
 		monochrome = true)
 public class Runner extends AbstractTestNGCucumberTests {
 

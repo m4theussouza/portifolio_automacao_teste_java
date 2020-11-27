@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="1" tests="5" time="175.023">
+    <testcase classname="Google" name="Buscar RSI no Google" time="8.977">
+        <skipped><![CDATA[Dado que eu esteja na página do Google......................................undefined
+Quando eu buscar pela palavra "RSI Informática".............................undefined
+Então eu valido que a busca foi realizada...................................undefined
+]]></skipped>
+    </testcase>
+    <testcase classname="Realizar Login" name="CT0001 Fazer login com diferentes usuarios SWAGLABS" time="42.572">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Dado que eu esteja na página do SWAGLABS....................................passed
+Quando eu fizer login com o "standard_user" e "secret_sauce"................failed
+Então valido que o login teve status "sucesso"..............................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at br.com.rsi.utils.PageBase.assertTrue(PageBase.java:132)
+	at br.com.rsi.pages.LoginPage.validarEntradasLogin(LoginPage.java:44)
+	at br.com.rsi.steps.LoginSteps.eu_fizer_login_com_o(LoginSteps.java:22)
+	at ✽.eu fizer login com o "standard_user" e "secret_sauce"(features/loginComSucesso.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="Realizar Login" name="CT0001 Fazer login com diferentes usuarios SWAGLABS 2" time="12.765">
+        <system-out><![CDATA[Dado que eu esteja na página do SWAGLABS....................................passed
+Quando eu fizer login com o "locked_out_user" e "secret_sauce"..............passed
+Então valido que o login teve status "bloqueado"............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Realizar Login" name="CT0001 Fazer login com diferentes usuarios SWAGLABS 3" time="64.275">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Dado que eu esteja na página do SWAGLABS....................................passed
+Quando eu fizer login com o "problem_user" e "secret_sauce".................failed
+Então valido que o login teve status "problema".............................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at br.com.rsi.utils.PageBase.assertTrue(PageBase.java:132)
+	at br.com.rsi.pages.LoginPage.validarEntradasLogin(LoginPage.java:44)
+	at br.com.rsi.steps.LoginSteps.eu_fizer_login_com_o(LoginSteps.java:22)
+	at ✽.eu fizer login com o "problem_user" e "secret_sauce"(features/loginComSucesso.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="Realizar Login" name="CT0001 Fazer login com diferentes usuarios SWAGLABS 4" time="46.003">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Dado que eu esteja na página do SWAGLABS....................................passed
+Quando eu fizer login com o "performance_glitch_user" e "secret_sauce"......failed
+Então valido que o login teve status "performance"..........................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at br.com.rsi.utils.PageBase.assertTrue(PageBase.java:132)
+	at br.com.rsi.pages.LoginPage.validarEntradasLogin(LoginPage.java:44)
+	at br.com.rsi.steps.LoginSteps.eu_fizer_login_com_o(LoginSteps.java:22)
+	at ✽.eu fizer login com o "performance_glitch_user" e "secret_sauce"(features/loginComSucesso.feature:6)
+]]></failure>
+    </testcase>
+</testsuite>
+ception(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:432)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:348)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:311)
+	at br.com.rsi.utils.PageBase.elementoExiste(PageBase.java:56)
+	at br.com.rsi.pages.LoginPage.validarEntradasLogin(LoginPage.java:44)
+	at br.com.rsi.steps.LoginSteps.eu_fizer_login_com_o(LoginSteps.java:22)
+	at ✽.eu fizer login com o "standard_user" e "secret_sauce"(features/loginComSucesso.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="Realizar Login" name="CT0001 Fazer login com diferentes usuarios SWAGLABS 2" time="48.96">
+        <failure message="chrome not reachable&#10;  (Session info: chrome=87.0.4280.66)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-23QNGAJ', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\mathe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 42092de3570548828b2267e77887f7aa" type="org.openqa.selenium.WebDriverException"><![CDATA[Dado que eu esteja na página do SWAGLABS....................................skipped
+Quando eu fizer login com o "locked_out_user" e "secret_sauce"..............skipped
+Então valido que o login teve status "bloqueado"............................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=87.0.4280.66)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-23QNGAJ', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\mathe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 42092de3570548828b2267e77887f7aa
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at br.com.rsi.utils.Setup.iniciar(Setup.java:66)
+	at br.com.rsi.test.FazerLoginTest.setupStart(FazerLoginTest.java:48)
+]]></failure>
+    </testcase>
+    <testcase classname="Realizar Login" name="CT0001 Fazer login com diferentes usuarios SWAGLABS 3" time="72.619">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Dado que eu esteja na página do SWAGLABS....................................passed
+Quando eu fizer login com o "problem_user" e "secret_sauce".................failed
+Então valido que o login teve status "problema".............................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at br.com.rsi.utils.PageBase.assertTrue(PageBase.java:132)
+	at br.com.rsi.pages.LoginPage.validarEntradasLogin(LoginPage.java:44)
+	at br.com.rsi.steps.LoginSteps.eu_fizer_login_com_o(LoginSteps.java:22)
+	at ✽.eu fizer login com o "problem_user" e "secret_sauce"(features/loginComSucesso.feature:6)
+]]></failure>
+    </testcase>
+    <testcase classname="Realizar Login" name="CT0001 Fazer login com diferentes usuarios SWAGLABS 4" time="59.755">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Dado que eu esteja na página do SWAGLABS....................................passed
+Quando eu fizer login com o "performance_glitch_user" e "secret_sauce"......failed
+Então valido que o login teve status "performance"..........................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at br.com.rsi.utils.PageBase.assertTrue(PageBase.java:132)
+	at br.com.rsi.pages.LoginPage.validarEntradasLogin(LoginPage.java:44)
+	at br.com.rsi.steps.LoginSteps.eu_fizer_login_com_o(LoginSteps.java:22)
+	at ✽.eu fizer login com o "performance_glitch_user" e "secret_sauce"(features/loginComSucesso.feature:6)
+]]></failure>
+    </testcase>
+</testsuite>

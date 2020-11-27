@@ -1,10 +1,10 @@
-package br.com.rsi.pages;
+package br.com.mat.pages;
 
 import java.io.IOException;
 
 import org.openqa.selenium.WebElement;
 
-import br.com.rsi.utils.PageBase;
+import br.com.mat.utils.PageBase;
 
 public class LoginPage extends PageBase {
 	

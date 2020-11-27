@@ -1,4 +1,4 @@
-package br.com.rsi.test;
+package br.com.mat.test;
 
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 
@@ -17,9 +17,9 @@ import org.openqa.selenium.WebDriver;
 
 import com.itextpdf.text.DocumentException;
 
-import br.com.rsi.steps.LoginSteps;
-import br.com.rsi.utils.Pdf;
-import br.com.rsi.utils.Setup;
+import br.com.mat.steps.LoginSteps;
+import br.com.mat.utils.Pdf;
+import br.com.mat.utils.Setup;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -37,7 +37,6 @@ public class FazerLoginTest extends Setup {
 	
 	@Before
 	public void setupStart(Scenario scenario) throws IOException {
-		
 		DateTimeFormatter dataTempoFormato = DateTimeFormatter.ofPattern("_dd_MM_yyyy_HH_mm_ss");  
 		LocalDateTime agora = LocalDateTime.now();
 		String dataTexto = dataTempoFormato.format(agora);
@@ -72,6 +71,7 @@ public class FazerLoginTest extends Setup {
 			Pdf.generate(caminhoPastas, nomeScenarioData, status);
 			new File(temp).delete();
 		}
+		Runtime.getRuntime().exec("mvn clean verify");
 	
 		fechar();
 	}

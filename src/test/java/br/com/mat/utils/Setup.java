@@ -1,4 +1,4 @@
-package br.com.rsi.utils;
+package br.com.mat.utils;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,7 +13,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-import br.com.rsi.pages.Constantes;
+import br.com.mat.pages.Constantes;
 
 public class Setup {
 		

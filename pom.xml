@@ -122,12 +122,8 @@
 						</goals>
 						<configuration>
 							<projectName>cucumber-jvm-example</projectName>
-							<outputDirectory>${project.build.directory}</outputDirectory>
-							<cucumberOutput>${project.build.directory}\target\cucumber.json</cucumberOutput>
-							<jsonFiles>
-						    	<jsonFile>**/*.json</jsonFile>
-							</jsonFiles>
-						
+							<outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
+							<cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>					
 						</configuration>
 					</execution>
 				</executions>

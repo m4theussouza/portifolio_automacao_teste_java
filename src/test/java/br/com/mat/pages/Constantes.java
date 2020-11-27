@@ -1,4 +1,4 @@
-package br.com.rsi.pages;
+package br.com.mat.pages;
 
 public class Constantes {
 	public static int TIME_WAIT_INIT_BROWSER = 20;
