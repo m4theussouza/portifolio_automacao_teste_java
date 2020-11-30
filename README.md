@@ -10,8 +10,7 @@ Desafio para fazer login com alguns usuarios do SwagLab.
     - Baixe e instale o [Eclipse](https://www.eclipse.org/downloads/) IDE.
     - Baixa o driver do Navegador que deseja executar o teste. [Chrome](https://sites.google.com/a/chromium.org/chromedriver/downloads); [Firefox](github.com/mozilla/geckodriver/releases); [IE](selenium-release.storage.googleapis.com/index.html);
     - Baixe e instale o Maven. [Maven Download](https://maven.apache.org/download.cgi); [Maven Instalação](https://dicasdejava.com.br/como-instalar-o-maven-no-windows)
-
-	
+    - Baixe e instale o Git para Windows. [Git Download](https://git-scm.com/download/win); 
 
 ## Baixando projeto via GitHub
 
