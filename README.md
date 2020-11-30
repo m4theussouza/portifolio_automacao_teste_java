@@ -7,7 +7,7 @@ Desafio para fazer login com alguns usuarios do SwagLab.
 
 - Download e Instalação
     - Baixe e instale o Java [JDK Java Download](https://www.oracle.com/java/technologies/javase-jdk15-downloads.html); [Java Instalação](medium.com/@mauriciogeneroso/configurando-java-4-como-configurar-as-variáveis-java-home-path-e-classpath-no-windows-46040950638f).
-    - Baixe e instale o [Eclipse](https://www.eclipse.org/downloads.) IDE.
+    - Baixe e instale o [Eclipse](https://www.eclipse.org/downloads/) IDE.
     - Baixa o driver do Navegador que deseja executar o teste. [Chrome](https://sites.google.com/a/chromium.org/chromedriver/downloads); [Firefox](github.com/mozilla/geckodriver/releases); [IE](selenium-release.storage.googleapis.com/index.html);
     - Baixe e instale o Maven. [Maven Download](https://maven.apache.org/download.cgi); [Maven Instalação](https://dicasdejava.com.br/como-instalar-o-maven-no-windows)
 
