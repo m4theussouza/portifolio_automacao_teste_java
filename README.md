@@ -39,13 +39,17 @@ Desafio para fazer login com alguns usuarios do SwagLab.
     - Clique em 'Next';
     - Clique em 'Finish';
 
-## Podemos executar os testes de duas formas:
-- A primeira maneira é diretamente pelo eclipse e gera somente um arquivo .pdf com todos os prints que tiramos no decorrer do cenário:
-    - Execute com JUnit a classe Runner.java
-    - Os testes serão executados;
-- A segunda maneira gera um arquivo .pdf com todos os prints e gera um html com as features executadas, exibindo tempo, porcetagem de cenários com status passado:
-    - Abra o cmd ou power shell;
-    - Execute o comando 'mvn test verify' sem aspas;
-    - Os testes serão executados;
-- Os arquivos .pdf estarão na pasta 'target\report';
-- Os arquivos .html estarão na pasta 'target\cucumber-html-reports';
+## Estrutura e execução da ferramenta:
+- Os passos abaixo explicam como podemos gerar relatórios allure, pdf, usar o excel como fonte de dados para o nosso teste e como é a estrutura da ferramente
+- Estrutura e organização:
+    - O projeto base é feito para que cada cenário de teste tenha seu Setup de after e before especifico, ou seja, o CT0001 tem o seu unico before e after para que caso necessario é possivel especificar condicoes exclusivas de before e after do cenário
+    - Para rodar os testes executamos o package runner.
+    - Podemos rodar um cenário rodando a classe runner desejada
+    - O projeto esta desenvolvido em page object
+- Excel:
+    - A massa de dados pode ser coletada via Excel, é necessário instanciar a classe Excel e passar o caminho do arquivo xlsx dentro do arquivo start-properties
+    - Todos os cenarios no arquivo .feature devem iniciar com CTXXXX onde substituimos XXXX por 4 numeros, isso servira como base para o software saber de qual linha ele olhara a massa de dados.
+    - Ao pedir dados com a classe Excel, chamamos o método getData e passamos o nome da Coluna de onde queremos o dado, e o software sabendo que estamos no cenario CT0001 (por exemplo) faz a busca nome coluna x prefixo nome cenario e traz a informação da célula de intersecção deles. Por isso é necessário que a primeira coluna da tabela cotenha o mesmo prefixo existente no nome do cenário.
+- Report:
+    - Após a execução de todos os cenarios de teste executar o comando "mvn allure:serve" para gerar um relatorio em html com status de todos os cenarios, prints e ect.
+    - Um pdf é gerado após a execução do cenário de teste na pasta target\reports
